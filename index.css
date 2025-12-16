@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2b57 0%, #1e4d92 100%);
+  color: white !important; /* Force white text */
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Force white text everywhere */
+h1, h2, h3, p, strong {
+  color: white !important;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7) !important;
+}
+
+.card {
+  background: white !important;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-left: 8px solid;
+}
+
+.card p, .card h2, .card h3, .card strong {
+  color: #0f2b57 !important;
+  font-weight: 600;
+}
+
+.card p {
+  color: #333 !important;
+}
+
+.risk-high {
+  border-left-color: #e74c3c !important;
+}
+
+.risk-medium {
+  border-left-color: #f39c12 !important;
+}
+
+.risk-low {
+  border-left-color: #27ae60 !important;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #0f2b57 !important;
+  color: white !important;
+}
+
+.btn-success {
+  background: #27ae60 !important;
+  color: white !important;
+  padding: 14px 32px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Success message */
+div[style*="background: #27ae60"] {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Home welcome text */
+div[style*="textAlign: center"] h1,
+div[style*="textAlign: center"] p {
+  color: white !important;
+  text-shadow: 3px 3px 8px rgba(0,0,0,0.8) !important;
+}
